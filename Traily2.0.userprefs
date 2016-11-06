@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerHightScore.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerHightScore.cs" Line="18" Column="3" />
+      <File FileName="Assets\Scripts\GameScript.cs" Line="17" Column="36" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

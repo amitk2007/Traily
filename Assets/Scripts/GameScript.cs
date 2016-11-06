@@ -14,7 +14,7 @@ public class GameScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (player == null) {
-			Application.LoadLevel("EndGAme");
+			Application.LoadLevel("EndGAme 1");
 		} else {
 			if (PlayerScript.startTime!=0) {
 				scoreTime = Time.time - PlayerScript.startTime;

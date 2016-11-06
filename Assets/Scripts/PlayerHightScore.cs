@@ -16,7 +16,7 @@ public class PlayerHightScore : MonoBehaviour {
 		GameScript.scoreTime = 0;
 			//score = playerScript.playerScore;
 		
-		PlayerPrefs.SetFloat ("highscore", highscore);
+		highscore = PlayerPrefs.GetFloat ("highscore");
 
 		if (highscore < score) {
 			NewBest.GetComponent<Text> ().enabled = true;

@@ -8,12 +8,13 @@ public class GameScript : MonoBehaviour {
 	public static float scoreTime=0;
 	// Use this for initialization
 	void Start () {
-	
+        AdManager.Instance.ShowBanner();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (player == null) {
+            AdManager.Instance.ShowVideo();
 			Application.LoadLevel("EndGAme 1");
 		} else {
 			if (PlayerScript.startTime!=0) {

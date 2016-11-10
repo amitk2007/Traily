@@ -10,6 +10,7 @@ public class Menu : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PointsText.GetComponent<Text> ().text = GameScript.scoreTime.ToString();
+        AdManager.Instance.RemoveBunner();
 	}
 	
 	// Update is called once per frame

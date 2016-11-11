@@ -3,10 +3,12 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour 
 {
-
-	bool moved = false;
+    #region variables
+    bool moved = false;
 	public static float startTime=0;
-	void Start () {
+    #endregion
+
+    void Start () {
 	}
 	
 	void Update () 

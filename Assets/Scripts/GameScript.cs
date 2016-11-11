@@ -3,11 +3,15 @@ using System.Collections;
 
 public class GameScript : MonoBehaviour {
 
-	public GameObject player;
+    #region variables
+    public GameObject player;
 	public GUISkin theSkin;
 	public static float scoreTime=0;
-	// Use this for initialization
-	void Start () {
+    bool isVideoReady = false;
+    #endregion
+
+    // Use this for initialization
+    void Start () {
         AdManager.Instance.ShowBanner();
 	}
 	
@@ -21,7 +25,14 @@ public class GameScript : MonoBehaviour {
 				scoreTime = Time.time - PlayerScript.startTime;
 			}
 		}
-	}
+
+        AdManager.Instance.ShowBanner();
+
+        if (isVideoReady == false)
+        {
+            isVideoReady = AdManager.Instance.LoadVidoe();
+        }
+    }
 
 	void OnGUI () 
 	{

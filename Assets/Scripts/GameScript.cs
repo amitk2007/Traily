@@ -26,8 +26,6 @@ public class GameScript : MonoBehaviour {
 			}
 		}
 
-        AdManager.Instance.ShowBanner();
-
         if (isVideoReady == false)
         {
             isVideoReady = AdManager.Instance.LoadVidoe();

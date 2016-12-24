@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviour {
 	
 	public GameObject PointsText;
+    public GameObject CoinsText;
 	// Use this for initialization
 	void Start () {
 		PointsText.GetComponent<Text> ().text = GameScript.scoreTime.ToString();
+        CoinsText.GetComponent<Text>().text = Holders.Coins.ToString();
         AdManager.Instance.RemoveBunner();
 	}
 	

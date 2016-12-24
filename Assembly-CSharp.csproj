@@ -51,10 +51,13 @@
      <Compile Include="Assets\Scripts\AdsScripts\PreLoaderScript.cs" />
      <Compile Include="Assets\Scripts\AdsScripts\game.cs" />
      <Compile Include="Assets\Scripts\GameScript.cs" />
+     <Compile Include="Assets\Scripts\Holders.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PlayerHightScore.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\PreLoaderAnimation.cs" />
+     <Compile Include="Assets\Scripts\Stars\StarScript.cs" />
+     <Compile Include="Assets\Scripts\Stars\StrarsSpone.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

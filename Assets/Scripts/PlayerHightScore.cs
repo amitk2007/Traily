@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class PlayerHightScore : MonoBehaviour
 {
 
-    float highScore;
+   // float highScore;
     float score;
     public GameObject HighPointsText;
     public GameObject NewBest;
@@ -17,7 +17,7 @@ public class PlayerHightScore : MonoBehaviour
         GameScript.scoreTime = 0;
         //score = playerScript.playerScore;
 
-        highScore = Holders.highscore;
+        /*highScore = Holders.highscore;
 
         if (highScore < score)
         {
@@ -30,7 +30,20 @@ public class PlayerHightScore : MonoBehaviour
 
         highScore = Mathf.Max(highScore, score);
         Holders.SaveFloat("highscore", highScore);
-        HighPointsText.GetComponent<Text>().text = highScore.ToString();
+        HighPointsText.GetComponent<Text>().text = highScore.ToString();*/
+
+        if (Holders.highscore < score)
+        {
+            NewBest.GetComponent<Text>().enabled = true;
+        }
+        else
+        {
+            NewBest.GetComponent<Text>().enabled = false;
+        }
+
+        Holders.highscore = Mathf.Max(Holders.highscore, score);
+        Holders.SaveFloat("highscore", Holders.highscore);
+        HighPointsText.GetComponent<Text>().text = Holders.highscore.ToString();
     }
 
     // Update is called once per frame

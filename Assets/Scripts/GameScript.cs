@@ -15,6 +15,7 @@ public class GameScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        starsInGame = 0;
         AdManager.Instance.ShowBanner();
 	}
 	
@@ -22,6 +23,7 @@ public class GameScript : MonoBehaviour {
 	void Update () {
 		if (player == null) {
             Holders.Coins = Holders.Coins + starsInGame;
+            Holders.SaveInt("Coins", Holders.Coins);
             AdManager.Instance.ShowVideo();
 			Application.LoadLevel("EndGAme 1");
 		} else {

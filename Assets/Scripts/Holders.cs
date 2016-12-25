@@ -8,7 +8,7 @@ public class Holders : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Coins = GetInt("Coins", 0);
-        highscore = GetFloat("highscore",0.0f);
+        highscore = GetFloat("highscore", 0.0f);
 	}
 	
 	// Update is called once per frame

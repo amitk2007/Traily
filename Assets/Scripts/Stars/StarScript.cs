@@ -15,7 +15,6 @@ public class StarScript : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         GameScript.starsInGame++;
-        print(GameScript.starsInGame);
         Destroy(this.gameObject);
     }
 

@@ -9,14 +9,11 @@ public class GameScript : MonoBehaviour {
 
     public static float scoreTime=0;
     public static int starsInGame = 0;
-
-    bool isVideoReady = false;
     #endregion
 
     // Use this for initialization
     void Start () {
         starsInGame = 0;
-        AdManager.Instance.ShowBanner();
 	}
 	
 	// Update is called once per frame
@@ -24,18 +21,12 @@ public class GameScript : MonoBehaviour {
 		if (player == null) {
             Holders.Coins = Holders.Coins + starsInGame;
             Holders.SaveInt("Coins", Holders.Coins);
-            AdManager.Instance.ShowVideo();
 			Application.LoadLevel("EndGAme 1");
 		} else {
 			if (PlayerScript.startTime!=0) {
 				scoreTime = Time.time - PlayerScript.startTime;
 			}
 		}
-
-        if (isVideoReady == false)
-        {
-            isVideoReady = AdManager.Instance.LoadVidoe();
-        }
     }
 
 	void OnGUI () 

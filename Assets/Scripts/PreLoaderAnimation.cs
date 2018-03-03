@@ -10,7 +10,6 @@ public class PreLoaderAnimation : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        AdHelper.GetComponent<AdManager>().enabled = true;
 
         Vector3 leftRightCorner = Camera.main.ViewportToWorldPoint(new Vector3(0, 1, 10));
         player.transform.position = leftRightCorner;
